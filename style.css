@@ -2,3 +2,12 @@
     display: flex;
     align-items: flex-start;
 }
+
+.price span {
+    color: orange;
+}
+
+.discount {
+    color:gray;
+    font-size: x-small;
+}
