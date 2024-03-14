@@ -104,15 +104,50 @@ main{
 .discount{
     color: hsl(219, 9%, 45%);
     font-weight: 600;
-    margin-top: -20px;
+    margin-top: -10px;
     text-decoration: line-through;
 }
 
 /* Button Styles */
+.btn_container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.add_cart_btn{
+    background-color: var(--Orange);
+    flex: 2;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px 0px;
+}
+.add_cart_btn a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+.qty{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex:1;
+    background-color: hsl(223, 64%, 98%);
+    border: 1px solid hsl(220, 14%, 90%);
+    border-radius: 10px;
+    padding: 20px 20px;
+    }
+
 
 .attribution { 
     font-size: 11px; 
-    text-align: center; }
+    text-align: center; 
+    margin-bottom: 20px;
+}
 .attribution a { 
     color: hsl(228, 45%, 44%); }
 
@@ -121,7 +156,17 @@ main{
 
 @media only screen and (max-width: 600px) {
     body{
-        margin: 0px;
+        margin: 0px 20px;
     }
-    
+    main{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .right_side_content{
+        padding: 20px 0px;
+    }
+    .carousel_image{
+        width: 100%;
+        overflow-x: scroll;
+    }
 }
